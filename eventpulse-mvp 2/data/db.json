@@ -1,0 +1,59 @@
+{
+  "events": [
+    {
+      "id": "evt_1",
+      "title": "Ahmedabad Rooftop Music Night",
+      "city": "Ahmedabad",
+      "venue": "Sindhu Bhavan Road",
+      "date": "2026-09-12",
+      "time": "19:30",
+      "price": 499,
+      "category": "Music",
+      "image": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1200&q=80",
+      "description": "Live music, food and a rooftop evening experience.",
+      "status": "approved",
+      "featured": true,
+      "organizer": "Pulse Events",
+      "contact": "",
+      "capacity": 250
+    },
+    {
+      "id": "evt_2",
+      "title": "Startup Networking Meetup",
+      "city": "Ahmedabad",
+      "venue": "Prahlad Nagar",
+      "date": "2026-09-18",
+      "time": "18:00",
+      "price": 299,
+      "category": "Networking",
+      "image": "https://images.unsplash.com/photo-1515169067868-5387ec356754?auto=format&fit=crop&w=1200&q=80",
+      "description": "Meet founders, creators and professionals from across the city.",
+      "status": "approved",
+      "featured": false,
+      "organizer": "Founder Circle",
+      "contact": "",
+      "capacity": 250
+    },
+    {
+      "id": "evt_3",
+      "title": "Weekend Comedy Showcase",
+      "city": "Ahmedabad",
+      "venue": "Navrangpura",
+      "date": "2026-09-20",
+      "time": "20:00",
+      "price": 399,
+      "category": "Comedy",
+      "image": "https://images.unsplash.com/photo-1527224857830-43a7acc85260?auto=format&fit=crop&w=1200&q=80",
+      "description": "A fun stand-up comedy evening with emerging local performers.",
+      "status": "approved",
+      "featured": false,
+      "organizer": "Laugh Local",
+      "contact": "",
+      "capacity": 250
+    }
+  ],
+  "bookings": [],
+  "promotionLeads": [],
+  "users": [],
+  "sessions": []
+}

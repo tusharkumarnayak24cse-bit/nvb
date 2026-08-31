@@ -1,0 +1,10 @@
+{
+  "name": "eventpulse-v2",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Event marketplace with organizer accounts, bookings, QR tickets and payment-ready flow",
+  "main": "server.js",
+  "scripts": {"start":"node server.js","dev":"node server.js"},
+  "dependencies": {"express":"^4.21.2","qrcode":"^1.5.4"},
+  "engines": {"node":">=18"}
+}

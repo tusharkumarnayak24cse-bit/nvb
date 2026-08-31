@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EventPulse — Discover & Book Local Events</title>
+  <meta name="description" content="Discover local events, book tickets and promote your event with EventPulse." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="/"><span>Event</span>Pulse</a>
+  <nav><a href="#events">Events</a><a href="#promote">Promote</a><a id="dashLink" class="hidden" href="/dashboard.html">Dashboard</a><a id="accountLink" class="btn btn-sm" href="/account.html">Login / Sign up</a></nav>
+</header>
+<main id="top">
+  <section class="hero">
+    <div class="hero-copy"><div class="eyebrow">AHMEDABAD • GUJARAT</div><h1>Find your next <span>great experience.</span></h1><p>Parties, concerts, comedy, workshops, meetups and local experiences—all in one place.</p><div class="hero-actions"><a class="btn" href="#events">Explore events</a><a class="btn btn-ghost" href="/account.html?role=organizer">Become an organizer</a></div><div class="trust-row"><div><strong>7%</strong><span>booking fee</span></div><div><strong>QR</strong><span>digital tickets</span></div><div><strong>₹499+</strong><span>featured promotion</span></div></div></div>
+    <div class="hero-card"><div class="hero-card-badge">EVENTPULSE V2</div><h3>Book. Pay. Scan.</h3><p>Organizer accounts, customer booking history and QR tickets are now built into the platform.</p><div class="mini-stat"><span>Live listings</span><strong id="heroCount">—</strong></div></div>
+  </section>
+  <section class="section" id="events"><div class="section-head"><div><div class="eyebrow">DISCOVER</div><h2>Upcoming events</h2></div><div class="filters"><input id="searchInput" placeholder="Search events..." /><select id="categoryFilter"><option value="all">All categories</option></select></div></div><div id="eventGrid" class="event-grid"></div><div id="emptyState" class="empty hidden">No events found.</div></section>
+  <section class="section split organizer-cta"><div><div class="eyebrow">FOR ORGANIZERS</div><h2>Sell tickets through your own dashboard.</h2><p class="muted">Create an organizer account, submit events, track paid bookings and see your ticket revenue. Events remain hidden until admin approval.</p></div><div class="panel"><div class="feature-list"><div><strong>✓ Event management</strong><span>Create, edit and remove listings.</span></div><div><strong>✓ Booking dashboard</strong><span>Track tickets and gross sales.</span></div><div><strong>✓ QR tickets</strong><span>Every paid booking gets a unique QR.</span></div><div><strong>✓ Payment ready</strong><span>Demo mode now, Razorpay when credentials are added.</span></div></div><a class="btn full" href="/account.html?role=organizer">Create organizer account</a></div></section>
+  <section class="section" id="promote"><div class="section-head"><div><div class="eyebrow">MAKE YOUR EVENT STAND OUT</div><h2>Promotion plans</h2></div></div><div class="plans"><article class="plan"><span>Starter</span><h3>₹499</h3><p>Featured badge + priority placement for 3 days.</p><button class="btn btn-ghost promoteBtn" data-plan="Starter ₹499">Choose Starter</button></article><article class="plan featured-plan"><span>Popular</span><h3>₹999</h3><p>Featured placement for 7 days + homepage spotlight.</p><button class="btn promoteBtn" data-plan="Popular ₹999">Choose Popular</button></article><article class="plan"><span>Boost</span><h3>₹1,999</h3><p>14-day spotlight + social promotion request.</p><button class="btn btn-ghost promoteBtn" data-plan="Boost ₹1,999">Choose Boost</button></article></div></section>
+</main>
+<footer><div class="brand"><span>Event</span>Pulse</div><p>Local events. Real organizers. Digital tickets.</p></footer>
+<dialog id="bookingDialog"><form id="bookingForm" class="dialog-card"><button type="button" class="close" data-close="bookingDialog">×</button><div class="eyebrow">BOOK TICKETS</div><h3 id="bookingTitle">Event</h3><input type="hidden" name="eventId" /><label>Quantity</label><input name="quantity" type="number" min="1" max="10" value="1" /><button class="btn" type="submit">Continue to payment</button><p class="form-note" id="bookingMsg"></p></form></dialog>
+<dialog id="promoteDialog"><form id="promoteForm" class="dialog-card"><button type="button" class="close" data-close="promoteDialog">×</button><div class="eyebrow">PROMOTE YOUR EVENT</div><h3 id="promoteTitle">Promotion plan</h3><input type="hidden" name="plan" /><input name="name" placeholder="Your name *" required /><input name="phone" placeholder="Phone / WhatsApp *" required /><input name="eventName" placeholder="Event name *" required /><button class="btn" type="submit">Request promotion</button><p class="form-note" id="promoteMsg"></p></form></dialog>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script><script src="app.js"></script>
+</body></html>
